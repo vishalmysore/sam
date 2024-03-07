@@ -29,19 +29,16 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) throws IOException, InvocationTargetException, IllegalAccessException {
 
-        String projectId = "cookgptserver";
-        String location = "us-central1";
-        String modelName = "gemini-1.0-pro";
         String promptSaveText = "My friends name is Vishal ,he lives in tornto.I want save this info locally ";
         String cookPromptSingleText = "My friends name is Vishal ,I dont know what to cook for him today.";
         String cookPromptText = "My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today";
         String weatherPrompt = "Hey I am in Toronto do you think i can go out without jacket";
 
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction("cookgptserver","us-central1","gemini-1.0-pro",promptSaveText);
-        log.info(result);
+      //  String result = (String)processor.processSingleAction(promptSaveText);
+      //  log.info(result);
 
-        List<Object> results = processor.processMultipleAction("cookgptserver","us-central1","gemini-1.0-pro","ey I am in Toronto do you think i can go out without jacket, my friends name is Vinod he lives in Balaghat, please save this information locally ",2);
+        List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket, my friends name is Vinod he lives in Balaghat, please save this information locally ",2);
         for (Object resultObj:results
        ) {
             log.info((String)resultObj);
