@@ -1,5 +1,8 @@
 ## Simple Language Model 
 
+This is reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
+Basically showcasing how straight forward it is to build action oriented applications in 100% Java 
+
 ```mvn clean install```
 
 Just this 2 lines will predict the action and execute it 
