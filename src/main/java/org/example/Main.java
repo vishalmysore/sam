@@ -41,12 +41,12 @@ public class Main {
         String result = (String)processor.processSingleAction("cookgptserver","us-central1","gemini-1.0-pro",promptSaveText);
         log.info(result);
 
-       // List<Object> results = processor.processMultipleAction("cookgptserver","us-central1","gemini-1.0-pro","ey I am in Toronto do you think i can go out without jacket, my friends name is Vinod he lives in Balaghat, please save this information locally ",2);
-        //for (Object resultObj:results
-       // ) {
-         //   log.info((String)resultObj);
+        List<Object> results = processor.processMultipleAction("cookgptserver","us-central1","gemini-1.0-pro","ey I am in Toronto do you think i can go out without jacket, my friends name is Vinod he lives in Balaghat, please save this information locally ",2);
+        for (Object resultObj:results
+       ) {
+            log.info((String)resultObj);
 
-        //}
+        }
 
 
     }
