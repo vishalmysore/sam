@@ -35,16 +35,16 @@ public class Main {
         String weatherPrompt = "Hey I am in Toronto do you think i can go out without jacket";
 
         ActionProcessor processor = new ActionProcessor();
-      //  String result = (String)processor.processSingleAction(promptSaveText);
-      //  log.info(result);
+        String result = (String)processor.processSingleAction(weatherPrompt);
+        log.info(result);
 
-        List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket, my friends name is Vinod he lives in Balaghat, please save this information locally ",2);
+      /*  List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket.  please save this information locally ",2);
         for (Object resultObj:results
        ) {
             log.info((String)resultObj);
 
         }
 
-
+*/
     }
 }
