@@ -8,7 +8,7 @@
     <a target="_blank" href="https://github.com/vishalmyore/tools4ai"><img src="https://img.shields.io/github/stars/vishalmysore/tools4ai?color=black" /></a>    
 </p>
 
-## Simple Language Model 
+## Simple Action Model - SAM
 
 This is reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
 Basically showcasing how straight forward it is to build action oriented applications in 100% Java 
