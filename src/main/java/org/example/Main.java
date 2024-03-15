@@ -12,6 +12,7 @@ import com.t4a.api.JavaMethodExecutor;
 import com.t4a.predict.Predict;
 import com.t4a.predict.PredictionLoader;
 import com.t4a.processor.ActionProcessor;
+import com.t4a.processor.OpenAiActionProcessor;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
@@ -33,10 +34,15 @@ public class Main {
         String cookPromptSingleText = "My friends name is Vishal ,I dont know what to cook for him today.";
         String cookPromptText = "My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today";
         String weatherPrompt = "Hey I am in Toronto do you think i can go out without jacket";
-
+        String getABook = "get me details on book harry poster with id 189 ";
+        String postABook = "post a book harry poster with id 189 ";
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction(weatherPrompt);
+        String result = (String)processor.processSingleAction(cookPromptSingleText);
         log.info(result);
+
+        OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
+        result = (String)opeAIprocessor.processSingleAction(cookPromptSingleText);
+        System.out.println(result);
 
       /*  List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket.  please save this information locally ",2);
         for (Object resultObj:results

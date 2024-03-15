@@ -8,7 +8,12 @@ import com.t4a.predict.Predict;
 public class SimpleAction implements AIAction {
 
     public String whatFoodDoesThisPersonLike(String name) {
+        if("vishal".equalsIgnoreCase(name))
         return "Paneer Butter Masala";
+        else if ("vinod".equalsIgnoreCase(name)) {
+            return "aloo kofta";
+        }else
+            return "something yummy";
     }
     @Override
     public String getActionName() {

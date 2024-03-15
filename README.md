@@ -13,13 +13,24 @@
 This is reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
 Basically showcasing how straight forward it is to build action oriented applications in 100% Java 
 
+Clone this project   
+and then  
 ```mvn clean install```
 
-Just this 2 lines will predict the action and execute it 
+Just this 2 lines will predict the action and execute it using Gemini 
 
 ```
  ActionProcessor processor = new ActionProcessor();
  String result = (String)processor.processSingleAction("My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today");
+```
+
+This code will use OpenAI to predict the action and execute it 
+
+```
+OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
+Sring result = (String)opeAIprocessor.processSingleAction(getABook);
+System.out.println(result);
+
 ```
 
 Create custom action by implementing ```AIAction ``` interface  
