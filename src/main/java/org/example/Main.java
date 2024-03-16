@@ -41,7 +41,7 @@ public class Main {
         log.info(result);
 
         OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
-        result = (String)opeAIprocessor.processSingleAction(cookPromptSingleText);
+         result = (String)opeAIprocessor.processSingleAction(cookPromptSingleText);
         System.out.println(result);
 
       /*  List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket.  please save this information locally ",2);
