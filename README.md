@@ -28,7 +28,7 @@ This code will use OpenAI to predict the action and execute it
 
 ```
 OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
-Sring result = (String)opeAIprocessor.processSingleAction(getABook);
+Sring result = (String)opeAIprocessor.processSingleAction('My friends name is Vishal ,he lives in tornto.I want save this info locally');
 System.out.println(result);
 
 ```
