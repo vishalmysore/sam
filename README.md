@@ -13,11 +13,11 @@
 This is reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
 Basically showcasing how straight forward it is to build action oriented applications in 100% Java 
 
-Clone this project   
-and then  
+Clone this project and then run the maven command 
+
 ```mvn clean install```
 
-Just this 2 lines will predict the action and execute it using Gemini 
+Take a look at ```Main.java``` Just this 2 lines will predict the action and execute it using Gemini 
 
 ```
  ActionProcessor processor = new ActionProcessor();
@@ -28,7 +28,7 @@ This code will use OpenAI to predict the action and execute it
 
 ```
 OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
-Sring result = (String)opeAIprocessor.processSingleAction(getABook);
+Sring result = (String)opeAIprocessor.processSingleAction("My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today");
 System.out.println(result);
 
 ```
