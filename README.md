@@ -33,8 +33,49 @@ System.out.println(result);
 
 ```
 
-Create custom action by implementing ```AIAction ``` interface  
+Create custom action by implementing ```JavaMethodAction ``` interface  
+
+```mermaid
+@Predict(actionName = "whatFoodDoesThisPersonLike", description = "what is the food preference of this person ")
+public class SimpleAction implements JavaMethodAction {
+
+    public String whatFoodDoesThisPersonLike(String name) {
+        if("vishal".equalsIgnoreCase(name))
+            return "Paneer Butter Masala";
+        else if ("vinod".equalsIgnoreCase(name)) {
+            return "aloo kofta";
+        }else
+            return "something yummy";
+    }
+
+}
+```
+or
+```mermaid
+@Log
+@Predict(actionName = "googleSearch", description = "search the web for information")
+public class SearchAction implements JavaMethodAction {
+
+
+    public String googleSearch(String searchString, boolean isNews)  {
+        log.info(searchString+" : "+isNews);
+        HttpResponse<String> response = Unirest.post("https://google.serper.dev/search")
+                .header("X-API-KEY", PredictionLoader.getInstance().getSerperKey())
+                .header("Content-Type", "application/json")
+                .body("{\"q\":\""+searchString+"\"}")
+                .asString();
+        String resStr = response.getBody().toString();
+        return resStr;
+    }
+
+
+
+
+}
+```
+
 Or add actions in Shell or HTTP config files  
+
 
 You can add Human In Loop validation , Explainablity , Multi Command Processor, Hallucination Detector , Bias Detector , Database and Tibco actions as well
 please look at https://github.com/vishalmysore/Tools4AI for more information

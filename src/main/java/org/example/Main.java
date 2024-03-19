@@ -37,12 +37,12 @@ public class Main {
         String getABook = "get me details on book harry poster with id 189 ";
         String postABook = "post a book harry poster with id 189 ";
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction(cookPromptSingleText);
+        String result = (String)processor.processSingleAction(weatherPrompt);
         log.info(result);
 
-        OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
-         result = (String)opeAIprocessor.processSingleAction(cookPromptSingleText);
-        System.out.println(result);
+        //OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
+        //String result = (String)opeAIprocessor.processSingleAction(weatherPrompt);
+       // System.out.println(result);
 
       /*  List<Object> results = processor.processMultipleAction("Hey I am in Toronto do you think i can go out without jacket.  please save this information locally ",2);
         for (Object resultObj:results
