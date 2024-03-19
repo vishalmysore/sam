@@ -35,7 +35,7 @@ System.out.println(result);
 
 Create custom action by implementing ```JavaMethodAction ``` interface  
 
-```mermaid
+```
 @Predict(actionName = "whatFoodDoesThisPersonLike", description = "what is the food preference of this person ")
 public class SimpleAction implements JavaMethodAction {
 
@@ -51,7 +51,7 @@ public class SimpleAction implements JavaMethodAction {
 }
 ```
 or
-```mermaid
+```
 @Log
 @Predict(actionName = "googleSearch", description = "search the web for information")
 public class SearchAction implements JavaMethodAction {
