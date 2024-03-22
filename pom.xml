@@ -17,7 +17,7 @@
         <dependency>
             <groupId>io.github.vishalmysore</groupId>
             <artifactId>tools4ai</artifactId>
-            <version>0.8.2</version>
+            <version>0.8.5</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

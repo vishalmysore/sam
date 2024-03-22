@@ -11,6 +11,7 @@ import com.t4a.api.AIAction;
 import com.t4a.api.JavaMethodExecutor;
 import com.t4a.predict.Predict;
 import com.t4a.predict.PredictionLoader;
+import com.t4a.processor.AIProcessingException;
 import com.t4a.processor.ActionProcessor;
 import com.t4a.processor.OpenAiActionProcessor;
 import lombok.extern.java.Log;
@@ -28,16 +29,16 @@ import java.util.Set;
 
 @Log
 public class Main {
-    public static void main(String[] args) throws IOException, InvocationTargetException, IllegalAccessException {
+    public static void main(String[] args) throws AIProcessingException {
 
-        String promptSaveText = "My friends name is Vishal ,he lives in tornto.I want save this info locally ";
+        String promptSaveText = "My friends name is Vishal ,he lives in toronto.I want save this info locally ";
         String cookPromptSingleText = "My friends name is Vishal ,I dont know what to cook for him today.";
         String cookPromptText = "My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today";
         String weatherPrompt = "Hey I am in Toronto do you think i can go out without jacket";
         String getABook = "get me details on book harry poster with id 189 ";
-        String postABook = "post a book harry poster with id 189 ";
+        String postABook = "post a book harry poster with id 189 the publish date is 2024-03-22 and the description is about harry who likes poster its around 500 pages  ";
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction(weatherPrompt);
+        String result = (String)processor.processSingleAction(promptSaveText);
         log.info(result);
 
         //OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();
