@@ -22,8 +22,11 @@ Clone this project and then
 Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini 
 
 ```
- ActionProcessor processor = new ActionProcessor();
- String result = (String)processor.processSingleAction("My friends name is Vishal ,I dont know what to cook for him today. Also I want to take him out to park today");
+String cookPromptSingleText = "My friends name is Vishal ," +
+                "I dont know what to cook for him today.";
+ActionProcessor processor = new ActionProcessor();
+String result = (String)processor.processSingleAction(cookPromptSingleText);
+log.info(result);
 ```
 
 This code will use OpenAI to predict the action and execute it 
