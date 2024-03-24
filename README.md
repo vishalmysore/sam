@@ -212,6 +212,56 @@ JSONObject jsonObject = new JSONObject(jsonNode.toString());
 String xmlString = XML.toString(jsonObject); 
 ```
 
+### Break Prompt into Multiple Subprompts and take action
+
+You can have a really long prompt with multiple actions , those prompts will be broken down in multiple subprompts
+``` 
+@Log
+public class ActionExample {
+    public static void main(String[] args) throws AIProcessingException {
+        ActionProcessor processor = new ActionProcessor();
+        String multiPrmpt = "hey I am in Toronto do you think i can go out without jacket," +
+                " also save the weather information , City location and your suggestion in file, " +
+                "also include places to see";
+        String processed = processor.processMultipleActionDynamically
+                (multiPrmpt, 
+                        new LoggingHumanDecision(),
+                        new LogginggExplainDecision());
+        log.info(processed);
+    }
+}
+```
+Tools4AI will create a JSon from the prompt
+
+```
+{
+  "prmpt": [
+    {
+      "id": "1",
+      "subprompt": "What is the weather in Toronto?",
+      "depend_on": null
+    },
+    {
+      "id": "2",
+      "subprompt": "Do I need a jacket in this weather?",
+      "depend_on": "1"
+    },
+    {
+      "id": "3",
+      "subprompt": "Save the weather information, city location, and suggestion in a file.",
+      "depend_on": "2"
+    },
+    {
+      "id": "4",
+      "subprompt": "Suggest some places to see in Toronto.",
+      "depend_on": "3"
+    }
+  ]
+}
+
+```
+After that each Subprompt will be processd independently or in dependency order, if the prompts are dependent on each other
+then the result from previous prompt will be fed into the next one.
 
 ## Java Doc
 https://javadoc.io/doc/io.github.vishalmysore/tools4ai/latest/com/t4a/api/AIAction.html
