@@ -86,6 +86,15 @@ please look at https://github.com/vishalmysore/Tools4AI for more information
 
 Prompt Transformer, a core feature in the Tools4AI project, simplifies data transformation tasks. It effortlessly converts prompts into various formats like Java POJOs, JSON strings, CSV files, and XML. By enabling direct conversion of prompts into domain-specific objects, Prompt Transformer streamlines data processing tasks. It offers flexibility and ease of use for transforming data structures to meet diverse needs in modern applications.
 
+### Covert to Simple Pojo
+
+```  
+PromptTransformer builder = new PromptTransformer();
+//Convert the prompt to Pojo
+Player player = (Player)builder.transformIntoPojo("Sachin Tendulkar is very good cricket player, he joined the sports on 24032022, he has played 300 matches and his max score is 400", Player.class.getName(),"Player","create player pojo");
+log.info(player.toString())
+```
+
 ## Java Doc
 https://javadoc.io/doc/io.github.vishalmysore/tools4ai/latest/com/t4a/api/AIAction.html
 
