@@ -89,7 +89,7 @@ please look at https://github.com/vishalmysore/Tools4AI for more information
 
 Prompt Transformer, a core feature in the Tools4AI project, simplifies data transformation tasks. It effortlessly converts prompts into various formats like Java POJOs, JSON strings, CSV files, and XML. By enabling direct conversion of prompts into domain-specific objects, Prompt Transformer streamlines data processing tasks. It offers flexibility and ease of use for transforming data structures to meet diverse needs in modern applications.
 
-### Convert to Simple Pojo
+### Convert Prompt to Simple Pojo
 
 Lets take the first scenario where you want to conver the prompt directly into Java Bean or Pojo
 
@@ -127,7 +127,7 @@ public class Player {
 }
  
 ```
-### Convert to Complex Pojo
+### Convert Prompt to Complex Pojo
 
 The transformer can also convert into complex Pojo ( where there are multiple objects inside the Pojo)
 
@@ -150,7 +150,7 @@ public class RestaurantPojo {
     boolean cancel;
     String reserveDate; 
 ```
-### Convert with Custom GSON
+### Convert Prompt with Custom GSON
 
 If you expect some custom objects like Date etc in the prompt you can have custom Gson Builder
 
@@ -186,7 +186,31 @@ public class DateDeserializer implements JsonDeserializer<Date> {
 } 
 ```
 
-### Convert to Json String
+### Convert Prompt to Json String
+If you want to convert the Prompt into the Json String 
+``` 
+ prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008," +
+                "he has played 300 matches and his max score is 400";
+ //Extract Json from the prompt
+ String jsonString = "{\"lastName\":\"String\",\"firstName\":\"String\"}";
+ jsonString = builder.transformIntoJson(jsonString,prompt,"player","get player details");
+ log.info(jsonString);
+```
+
+The result will be 
+
+```
+"{\"lastName\":\"Tendulkar\",\"firstName\":\"Sachin\"}"; 
+```
+You can extract custom parameters from the prompt or can convert the entire prompt into JSON
+
+### Convert Prompt to XML
+Once you have the JSON you can convert the JSON into XML
+
+```
+JSONObject jsonObject = new JSONObject(jsonNode.toString());
+String xmlString = XML.toString(jsonObject); 
+```
 
 
 ## Java Doc

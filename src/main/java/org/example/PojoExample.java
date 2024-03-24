@@ -38,6 +38,8 @@ public class PojoExample {
         player = (Player)customBuilder.transformIntoPojo(prompt, Player.class.getName(),"Player","create player pojo");
         log.info(player.toString());
 
+        prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008," +
+                "he has played 300 matches and his max score is 400";
         //Extract Json from the prompt
         String jsonString = "{\"lastName\":\"String\",\"firstName\":\"String\"}";
         jsonString = builder.transformIntoJson(jsonString,prompt,"player","get player details");
