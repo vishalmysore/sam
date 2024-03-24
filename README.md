@@ -88,12 +88,42 @@ Prompt Transformer, a core feature in the Tools4AI project, simplifies data tran
 
 ### Covert to Simple Pojo
 
+Lets take the first scenario where you want to conver the prompt directly into Java Bean or Pojo
+
 ```  
-PromptTransformer builder = new PromptTransformer();
+String promptTxt ="Sachin Tendulkar is very good cricket player, " +
+                           "he joined the sports on 24032022, he has played 300 matches " +
+                           "and his max score is 400";
 //Convert the prompt to Pojo
-Player player = (Player)builder.transformIntoPojo("Sachin Tendulkar is very good cricket player, he joined the sports on 24032022, he has played 300 matches and his max score is 400", Player.class.getName(),"Player","create player pojo");
-log.info(player.toString())
+Player player = (Player)builder.transformIntoPojo(promptTxt, Player.class.getName(),"Player","create player pojo");
+log.info(player.toString());
 ```
+
+The above will convert the prompt into this simple Pojo 
+```
+import lombok.*;
+import lombok.extern.java.Log;
+
+import java.util.Date;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
+public class Player {
+     int matches;
+     int maxScore;
+     String firstName;
+     String lastName;
+     Date dateJoined;
+
+
+}
+ 
+```
+
 
 ## Java Doc
 https://javadoc.io/doc/io.github.vishalmysore/tools4ai/latest/com/t4a/api/AIAction.html

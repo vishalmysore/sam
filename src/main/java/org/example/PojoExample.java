@@ -15,12 +15,17 @@ public class PojoExample {
     public static void main(String[] args) throws AIProcessingException {
         PromptTransformer builder = new PromptTransformer();
 
+        String promptTxt ="Sachin Tendulkar is very good cricket player, " +
+                           "he joined the sports on 24032022, he has played 300 matches " +
+                           "and his max score is 400";
         //Convert the prompt to Pojo
-        Player player = (Player)builder.transformIntoPojo("Sachin Tendulkar is very good cricket player, he joined the sports on 24032022, he has played 300 matches and his max score is 400", Player.class.getName(),"Player","create player pojo");
+        Player player = (Player)builder.transformIntoPojo(promptTxt, Player.class.getName(),"Player","create player pojo");
         log.info(player.toString());
 
+        promptTxt = "can you book Maharaja restaurant in " +
+                 "Toronto for 4 people on 12th may , I am Vishal ";
         //Convert the prompt to Complex Pojo
-        RestaurantPojo pojo = (RestaurantPojo)builder.transformIntoPojo("can you book Maharaja restaurant in Toronto for 4 people on 12th may , I am Vishal ", RestaurantPojo.class.getName(),"RestaurantPojo","Build the pojo for restaurant");
+        RestaurantPojo pojo = (RestaurantPojo)builder.transformIntoPojo(promptTxt, RestaurantPojo.class.getName(),"RestaurantPojo","Build the pojo for restaurant");
         log.info(pojo.toString());
 
         //Using Custom GSON to convert special values
@@ -28,7 +33,8 @@ public class PojoExample {
         gsonBuilder.registerTypeAdapter(Date.class, new DateDeserializer("dd MMMM yyyy"));
         Gson gson = gsonBuilder.create();
         PromptTransformer customBuilder = new PromptTransformer(gson);
-        String prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008, he has played 300 matches and his max score is 400";
+        String prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008," +
+                         "he has played 300 matches and his max score is 400";
         player = (Player)customBuilder.transformIntoPojo(prompt, Player.class.getName(),"Player","create player pojo");
         log.info(player.toString());
 
