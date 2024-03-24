@@ -91,6 +91,7 @@ Prompt Transformer, a core feature in the Tools4AI project, simplifies data tran
 Lets take the first scenario where you want to conver the prompt directly into Java Bean or Pojo
 
 ```  
+PromptTransformer builder = new PromptTransformer();
 String promptTxt ="Sachin Tendulkar is very good cricket player, " +
                            "he joined the sports on 24032022, he has played 300 matches " +
                            "and his max score is 400";
@@ -128,6 +129,7 @@ public class Player {
 The transformer can also convert into complex Pojo ( where there are multiple objects inside the Pojo)
 
 ```
+PromptTransformer builder = new PromptTransformer();
 promptTxt = "can you book Maharaja restaurant in " +
             "Toronto for 4 people on 12th may , I am Vishal ";
 //Convert the prompt to Complex Pojo
