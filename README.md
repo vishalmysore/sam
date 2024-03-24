@@ -8,15 +8,17 @@
     <a target="_blank" href="https://github.com/vishalmyore/tools4ai"><img src="https://img.shields.io/github/stars/vishalmysore/tools4ai?color=black" /></a>    
 </p>
 
-## Simple Action Model - SAM
+# 🎬 Simple Action Model - SAM
 
 This is reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
 Basically showcasing how straight forward it is to build action oriented applications in 100% Java 
 
+## Setup
 Clone this project and then  
 
 ```mvn clean install```
 
+## Quick Start
 Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini 
 
 ```
@@ -80,9 +82,13 @@ Or add actions in Shell or HTTP config files
 You can add Human In Loop validation , Explainablity , Multi Command Processor, Hallucination Detector , Bias Detector , Database and Tibco actions as well
 please look at https://github.com/vishalmysore/Tools4AI for more information
 
+## Prompt Transformer
+
+Prompt Transformer, a core feature in the Tools4AI project, simplifies data transformation tasks. It effortlessly converts prompts into various formats like Java POJOs, JSON strings, CSV files, and XML. By enabling direct conversion of prompts into domain-specific objects, Prompt Transformer streamlines data processing tasks. It offers flexibility and ease of use for transforming data structures to meet diverse needs in modern applications.
+
 ## Java Doc
 https://javadoc.io/doc/io.github.vishalmysore/tools4ai/latest/com/t4a/api/AIAction.html
 
-## MVN Dependency 
+## MVN Dependency
 
 https://repo1.maven.org/maven2/io/github/vishalmysore/tools4ai/
