@@ -19,7 +19,9 @@ Clone this project and then
 ```mvn clean install```
 
 ## Quick Start
-Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini 
+Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini , you dont have to worry
+about specifying the action, the action will be picked up based on Natural Language Processing semantic mapping
+and will be executed. 
 
 ```
 String cookPromptSingleText = "My friends name is Vishal ," +
@@ -38,7 +40,9 @@ System.out.println(result);
 
 ```
 
-Create custom action by implementing ```JavaMethodAction ``` interface  
+Create custom action by implementing ```JavaMethodAction ``` interface, the actionName specified in the predict annotation
+is the method you need to implement. Parameters of the method can be anything and any number of parameters are allowed
+You need to make sure parameters have meaningful name. 
 
 ```
 @Predict(actionName = "whatFoodDoesThisPersonLike", description = "what is the food preference of this person ")
