@@ -18,7 +18,9 @@ Clone this project and then
 
 ```mvn clean install```
 
-## Quick Start
+## Action Processor
+Action Processors are responsible for taking actions based on prompt. Actions can be written in Java Methods, Or could be 
+HTTP rest end points , could be Shell scripts or could be loaded directly from the Swagger HTTP configurations.
 Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini , you dont have to worry
 about specifying the action, the action will be picked up based on Natural Language Processing semantic mapping
 and will be executed. 
