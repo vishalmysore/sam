@@ -145,6 +145,41 @@ public class RestaurantPojo {
     boolean cancel;
     String reserveDate; 
 ```
+### Convert with Custom GSON
+
+If you expect some custom objects like Date etc in the prompt you can have custom Gson Builder
+
+```
+//Using Custom GSON to convert special values
+GsonBuilder gsonBuilder = new GsonBuilder();
+gsonBuilder.registerTypeAdapter(Date.class, new DateDeserializer("dd MMMM yyyy"));
+Gson gson = gsonBuilder.create();
+PromptTransformer customBuilder = new PromptTransformer(gson);
+String prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008," +
+                "he has played 300 matches and his max score is 400";
+player = (Player)customBuilder.transformIntoPojo(prompt, Player.class.getName(),"Player","create player pojo");
+log.info(player.toString()); 
+```
+This will use Custom Date Serializer 
+
+```
+public class DateDeserializer implements JsonDeserializer<Date> {
+    private final DateFormat dateFormat;
+
+    public DateDeserializer(String format) {
+        this.dateFormat = new SimpleDateFormat(format, Locale.ENGLISH);
+    }
+
+    @Override
+    public Date deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+        try {
+            return dateFormat.parse(json.getAsString().replaceAll("(st|nd|rd|th),", ","));
+        } catch (ParseException e) {
+            throw new JsonParseException(e);
+        }
+    }
+} 
+```
 
 ### Convert to Json String
 
