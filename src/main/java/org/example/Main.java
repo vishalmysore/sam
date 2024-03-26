@@ -40,7 +40,9 @@ public class Main {
         String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction(cookPromptSingleText);
+        String result = (String)processor.processSingleAction(postABook);
+        log.info(result);
+        result = (String)processor.processSingleAction("find me info about indian food on internet",new GoogleSearchAction());
         log.info(result);
 
         //OpenAiActionProcessor opeAIprocessor = new OpenAiActionProcessor();

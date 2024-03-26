@@ -10,6 +10,9 @@ import org.example.util.DateDeserializer;
 
 import java.util.Date;
 
+/**
+ * This example demonstrates converting prompt to pojos and json strings
+ */
 @Log
 public class PojoExample {
     public static void main(String[] args) throws AIProcessingException {
