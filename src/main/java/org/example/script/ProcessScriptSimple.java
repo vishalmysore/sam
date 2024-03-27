@@ -11,14 +11,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 @Log
-public class ProcessScript {
+public class ProcessScriptSimple {
     public static void main(String[] args) {
-        ProcessScript script = new ProcessScript();
+        ProcessScriptSimple script = new ProcessScriptSimple();
         script.process();
     }
 
     public void process() {
-        try (InputStream is = ProcessScript.class.getClassLoader().getResourceAsStream("test.action");
+        try (InputStream is = ProcessScriptSimple.class.getClassLoader().getResourceAsStream("test.action");
              BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
             ActionProcessor processor = new ActionProcessor();
             String line;
