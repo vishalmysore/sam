@@ -99,6 +99,15 @@ If you have a complete script written in English , ScriptProcessor will process 
 
 ```
 
+Sample script is here 
+
+``` 
+can you reserve the flight for Vishal from Toronto to Bangalore for 3 Days on 7th december
+If flight booking is successful, can you reserve the car for Vishal from Bangalore to Toronto for 10 Days on 17th december
+if car booking is successful and flight cost are less than $1000 then book the sight seeing attraction called 5 star palace
+if car booking is successful and flight cost are more than $1000 then book the sight seeing attraction called peanut palace
+```
+
 You can add Human In Loop validation , Explainablity , Multi Command Processor, Hallucination Detector , Bias Detector , Database and Tibco actions as well
 please look at https://github.com/vishalmysore/Tools4AI for more information
 
