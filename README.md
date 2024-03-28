@@ -87,6 +87,17 @@ public class SearchAction implements JavaMethodAction {
 
 Or add actions in Shell or HTTP config files  
 
+## Process Script
+
+If you have a complete script written in English , ScriptProcessor will process the script and provide consolidated results
+
+```
+ ScriptProcessor script = new ScriptProcessor();
+ ScriptResult result =  script.process("complexTest.action");
+ String resultsString = script.summarize(result)
+ log.info(resultsString)
+
+```
 
 You can add Human In Loop validation , Explainablity , Multi Command Processor, Hallucination Detector , Bias Detector , Database and Tibco actions as well
 please look at https://github.com/vishalmysore/Tools4AI for more information
@@ -269,17 +280,7 @@ Tools4AI will create a JSon from the prompt
 After that each Subprompt will be processd independently or in dependency order, if the prompts are dependent on each other
 then the result from previous prompt will be fed into the next one.
 
-## Process Script
 
-If you have a complete script written in English , tools4ai will process the script 
-
-```
- ScriptProcessor script = new ScriptProcessor();
- ScriptResult result =  script.process("complexTest.action");
- String resultsString = script.summarize(result)
- log.info(resultsString)
-
-```
 
 ## Java Doc
 https://javadoc.io/doc/io.github.vishalmysore/tools4ai/latest/com/t4a/api/AIAction.html
