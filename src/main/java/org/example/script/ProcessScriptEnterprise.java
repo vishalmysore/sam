@@ -11,15 +11,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-
 @Log
-public class ProcessScriptComplex {
+public class ProcessScriptEnterprise {
     public static void main(String[] args) throws AIProcessingException {
-        log.info("starting");
-        ScriptProcessor script = new ScriptProcessor();
-        ScriptResult result =  script.process("complexTest.action");
-        log.info(script.summarize(result));
+       ScriptProcessor script = new ScriptProcessor();
+       ScriptResult result =  script.process("enterprise.action");
+       log.info(script.summarize(result));
 
     }
-
 }
+

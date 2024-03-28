@@ -3,9 +3,9 @@ package org.example.script.actions;
 import com.t4a.api.JavaMethodAction;
 import com.t4a.predict.Predict;
 
-@Predict(actionName = "findTextInLogs", description = " Finds a particular text in Logs")
+@Predict(actionName = "checkLogs", description = " Finds a particular text in Logs")
 public class CheckLogsAction implements JavaMethodAction {
-    public String findTextInLogs(String textToFind, String logName) {
+    public String checkLogs(String textToFind, String logName, String applicationName) {
         return " Found the text "+textToFind;
     }
 }

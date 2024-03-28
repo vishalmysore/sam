@@ -1,0 +1,3 @@
+can you check the logs of CustMange and see if there is null pointer exception in log file called status.log
+if yes then restart the application CustManage
+Once the CustMange has been restarted please notify LibrayManagementSystem and AccountUpdateSystem

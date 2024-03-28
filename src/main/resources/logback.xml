@@ -1,0 +1,16 @@
+<configuration>
+    <property name="tools4ai.log" value="${tools4ai.log:-WARN}"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern> %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.example" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="com.t4a" level="${tools4ai.log}" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+</configuration>
