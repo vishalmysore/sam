@@ -15,7 +15,7 @@ Basically showcasing how straight forward it is to build action oriented applica
 SAM can be used as an autonomous agent by utilizing action scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
 applications. While retaining the core capabilities of autonomy and adaptability, scripts can operates within
 a controlled framework, executing tasks and making decisions that align with predefined business rules and 
-objectives
+objectives 
 
 ## Setup
 Clone this project and then  
