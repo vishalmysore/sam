@@ -91,7 +91,7 @@ public class SearchAction implements JavaMethodAction {
 
 Or add actions in Shell or HTTP config files  
 
-## Process Script
+## Autonomous Agent (Action Script)
 
 If you have a complete script written in English , ScriptProcessor will process the script and provide consolidated results
 
