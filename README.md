@@ -12,7 +12,7 @@
 
 SAM is a reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
 Basically showcasing how straight forward it is to build action oriented applications in 100% Java. In addition to action model
-SAM can be used an autonomous agent by utilizing action scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
+SAM can be used as an autonomous agent by utilizing action scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
 applications. While retaining the core capabilities of autonomy and adaptability, scripts can operates within
 a controlled framework, executing tasks and making decisions that align with predefined business rules and 
 objectives
