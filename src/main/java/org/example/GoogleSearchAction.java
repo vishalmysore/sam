@@ -14,7 +14,7 @@ public class GoogleSearchAction implements JavaMethodAction {
         //Just return random string if you do not have serper key
         //to get serper key look here https://serper.dev/
         if(PredictionLoader.getInstance().getSerperKey() == null) {
-            return "CN tower , Casa Loma";
+            return "jamun , jalebi";
         }
         log.info(searchString+" : "+isNews);
         HttpResponse<String> response = Unirest.post("https://google.serper.dev/search")

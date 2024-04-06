@@ -14,6 +14,9 @@ import com.t4a.predict.PredictionLoader;
 import com.t4a.processor.AIProcessingException;
 import com.t4a.processor.ActionProcessor;
 import com.t4a.processor.OpenAiActionProcessor;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.PathItem;
+import io.swagger.v3.parser.converter.SwaggerConverter;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
@@ -22,10 +25,7 @@ import org.springframework.core.type.filter.AnnotationTypeFilter;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Log
 public class Main {
@@ -39,8 +39,9 @@ public class Main {
 
         String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
+        String writePrmt = "my friends name is Vishal  , he lives in toronto , save this information to file";
         ActionProcessor processor = new ActionProcessor();
-        String result = (String)processor.processSingleAction(postABook);
+        String result = (String)processor.processSingleAction(writePrmt);
         log.info(result);
         result = (String)processor.processSingleAction("find me info about indian food on internet",new GoogleSearchAction());
         log.info(result);
