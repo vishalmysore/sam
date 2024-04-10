@@ -1,7 +1,8 @@
 package org.example.script.actions;
 
+import com.t4a.annotations.Predict;
 import com.t4a.api.JavaMethodAction;
-import com.t4a.predict.Predict;
+
 
 @Predict(actionName = "checkLogs", description = " Finds a particular text in Logs")
 public class CheckLogsAction implements JavaMethodAction {

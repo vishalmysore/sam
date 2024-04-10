@@ -1,5 +1,6 @@
-package org.example;
+package org.example.pojo;
 
+import com.t4a.annotations.Prompt;
 import lombok.*;
 import lombok.extern.java.Log;
 
@@ -16,6 +17,7 @@ public class Player {
      int maxScore;
      String firstName;
      String lastName;
+     @Prompt(dateFormat = "ddMMyyyy")
      Date dateJoined;
 
 

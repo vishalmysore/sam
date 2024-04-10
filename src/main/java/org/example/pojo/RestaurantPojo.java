@@ -1,4 +1,6 @@
-package org.example;
+package org.example.pojo;
+
+import org.example.pojo.RestaurantDetails;
 
 public class RestaurantPojo {
     String name;

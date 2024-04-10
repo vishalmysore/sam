@@ -1,31 +1,9 @@
 package org.example;
 
-import com.google.cloud.vertexai.VertexAI;
-import com.google.cloud.vertexai.api.Content;
-import com.google.cloud.vertexai.api.FunctionDeclaration;
-import com.google.cloud.vertexai.api.GenerateContentResponse;
-import com.google.cloud.vertexai.api.Tool;
-import com.google.cloud.vertexai.generativeai.*;
-import com.t4a.action.BlankAction;
-import com.t4a.api.AIAction;
-import com.t4a.api.JavaMethodExecutor;
-import com.t4a.predict.Predict;
-import com.t4a.predict.PredictionLoader;
 import com.t4a.processor.AIProcessingException;
 import com.t4a.processor.ActionProcessor;
-import com.t4a.processor.OpenAiActionProcessor;
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.PathItem;
-import io.swagger.v3.parser.converter.SwaggerConverter;
 import lombok.extern.java.Log;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.type.filter.AnnotationTypeFilter;
-
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.util.*;
+import org.example.actions.GoogleSearchAction;
 
 @Log
 public class Main {

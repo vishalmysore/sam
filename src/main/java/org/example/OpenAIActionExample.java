@@ -1,21 +1,19 @@
 package org.example;
 
 import com.t4a.processor.AIProcessingException;
-import com.t4a.processor.ActionProcessor;
+import com.t4a.processor.OpenAiActionProcessor;
 import lombok.extern.java.Log;
 import org.example.actions.AddRestaurantAction;
 
-/**
- * This will create the Player Pojo in real time and call the action
- */
 @Log
-public class ComplexActionExample {
+public class OpenAIActionExample {
     public static void main(String[] args) throws AIProcessingException {
-        ActionProcessor processor = new ActionProcessor();
+        OpenAiActionProcessor processor = new OpenAiActionProcessor();
         String promptTxt ="Sachin Tendulkar is very good cricket player, " +
                 "he joined the sports on 24032022, he has played 300 matches " +
                 "and his max score is 400. Can you send him a congratulations email";
         String response = (String)processor.processSingleAction(promptTxt);
+        response = processor.query(promptTxt,response);
         log.info(response);
 
 

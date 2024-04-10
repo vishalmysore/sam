@@ -1,6 +1,7 @@
-package org.example;
+package org.example.actions;
+import com.t4a.annotations.Predict;
 import com.t4a.api.JavaMethodAction;
-import com.t4a.predict.Predict;
+
 import lombok.extern.java.Log;
 
 import java.io.File;

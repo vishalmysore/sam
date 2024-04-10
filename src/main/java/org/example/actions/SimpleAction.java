@@ -1,9 +1,10 @@
-package org.example;
+package org.example.actions;
 
+import com.t4a.annotations.Predict;
 import com.t4a.api.AIAction;
 import com.t4a.api.ActionType;
 import com.t4a.api.JavaMethodAction;
-import com.t4a.predict.Predict;
+
 
 @Predict(actionName ="whatFoodDoesThisPersonLike", description = "Provide persons name and then find out what does that person like")
 public class SimpleAction implements JavaMethodAction {

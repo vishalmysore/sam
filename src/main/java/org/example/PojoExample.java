@@ -7,6 +7,8 @@ import com.t4a.predict.GeminiPromptTransformer;
 import com.t4a.predict.PromptTransformer;
 import com.t4a.processor.AIProcessingException;
 import lombok.extern.java.Log;
+import org.example.pojo.Player;
+import org.example.pojo.RestaurantPojo;
 import org.example.util.DateDeserializer;
 
 import java.util.Date;

@@ -1,9 +1,10 @@
-package org.example;
+package org.example.actions;
 
+import com.t4a.annotations.Predict;
 import com.t4a.api.AIAction;
 import com.t4a.api.ActionType;
 import com.t4a.api.JavaMethodAction;
-import com.t4a.predict.Predict;
+
 import lombok.extern.java.Log;
 import org.json.JSONArray;
 import org.json.JSONObject;
