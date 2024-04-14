@@ -32,7 +32,7 @@ and will be executed.
 ```
 String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
-ActionProcessor processor = new ActionProcessor();
+GeminiActionProcessor processor = new GeminiActionProcessor();
 String result = (String)processor.processSingleAction(cookPromptSingleText);
 log.info(result);
 ```
