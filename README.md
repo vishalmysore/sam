@@ -96,10 +96,10 @@ Trigger actions based directly on images! Yes, you read that right – with the 
 
 Imagine a system so advanced that it can:
 
-🚑 Call an ambulance immediately after detecting an image of a car accident.
-🍳 Suggest recipes the moment it sees images of vegetables.
-👮 Alert the police when it captures an image of a traffic signal violation.
-🚒 Contacts the fire department immediately if it "sees" fire.
+🚑 Call an ambulance immediately after detecting an image of a car accident.  
+🍳 Suggest recipes the moment it sees images of vegetables.  
+👮 Alert the police when it captures an image of a traffic signal violation.  
+🚒 Contacts the fire department immediately if it "sees" fire.  
 
 
 ```
