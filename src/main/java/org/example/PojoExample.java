@@ -3,9 +3,10 @@ package org.example;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.t4a.predict.GeminiPromptTransformer;
-import com.t4a.predict.PromptTransformer;
+
 import com.t4a.processor.AIProcessingException;
+import com.t4a.transform.GeminiPromptTransformer;
+import com.t4a.transform.PromptTransformer;
 import lombok.extern.java.Log;
 import org.example.pojo.Player;
 import org.example.pojo.RestaurantPojo;
@@ -58,7 +59,7 @@ public class PojoExample {
 
 
         jsonString = "{\"name\":\"String\",\"age\":\"number\",\"address\":{\"street\":\"String\",\"city\":\"String\",\"zip\":\"int\"},\"contacts\":[{\"type\":\"string\",\"value\":\"String\"},{\"type\":\"string\",\"value\":\"string\"}]}";
-        prompt = "Can you make sure you add this info about my friend John Doe, aged 30, lives at 123 Main St in New York, zip code 10001. He can be reached via email at john@example.com or by phone at 555-1234.";
+        prompt = "Can you make sure you add this info about my friend John Doe, aged 30, lives at 123 GeminiActionExample St in New York, zip code 10001. He can be reached via email at john@example.com or by phone at 555-1234.";
         jsonString = builder.transformIntoJson(jsonString,prompt,"MyFriend","get friend details");
         log.info(jsonString);
     }

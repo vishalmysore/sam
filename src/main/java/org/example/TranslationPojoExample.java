@@ -1,7 +1,8 @@
 package org.example;
 
-import com.t4a.predict.OpenAIPromptTransformer;
+
 import com.t4a.processor.AIProcessingException;
+import com.t4a.transform.OpenAIPromptTransformer;
 import org.example.pojo.MyTranslatePojo;
 
 public class TranslationPojoExample {

@@ -1,12 +1,12 @@
 package org.example;
 
 import com.t4a.processor.AIProcessingException;
-import com.t4a.processor.ActionProcessor;
+import com.t4a.processor.GeminiActionProcessor;
 import lombok.extern.java.Log;
 import org.example.actions.GoogleSearchAction;
 
 @Log
-public class Main {
+public class GeminiActionExample {
     public static void main(String[] args) throws AIProcessingException {
 
         String promptSaveText = "My friends name is Vishal ,he lives in toronto.I want save this info locally ";
@@ -18,7 +18,7 @@ public class Main {
         String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
         String writePrmt = "my friends name is Vishal  , he lives in toronto , save this information to file";
-        ActionProcessor processor = new ActionProcessor();
+        GeminiActionProcessor processor = new GeminiActionProcessor();
         String result = (String)processor.processSingleAction(writePrmt);
         log.info(result);
         result = (String)processor.processSingleAction("find me info about indian food on internet",new GoogleSearchAction());

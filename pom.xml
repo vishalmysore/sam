@@ -22,7 +22,7 @@
         <dependency>
             <groupId>io.github.vishalmysore</groupId>
             <artifactId>tools4ai</artifactId>
-            <version>0.9.6</version>
+            <version>0.9.7</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -61,9 +61,32 @@
             </executions>
             <configuration>
                 <!-- Specify the main class of your Java program -->
-                <mainClass>org.example.Main</mainClass>
+                <mainClass>org.example.GeminiActionExample</mainClass>
                 <!-- Pass arguments to your Java program -->
             </configuration>
+        </plugin>
+        <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>3.3.0</version> <!-- Use the latest version -->
+            <configuration>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+                <archive>
+                    <manifest>
+                        <mainClass>org.example.GeminiActionExample</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>make-assembly</id> <!-- this is used for inheritance merges -->
+                    <phase>package</phase> <!-- bind to the packaging phase -->
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
     </plugins>
     </build>
