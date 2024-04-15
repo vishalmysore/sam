@@ -91,6 +91,31 @@ public class SearchAction implements JavaMethodAction {
 
 Or add actions in Shell or HTTP config files  
 
+## Image Processing and Actions
+Trigger actions based directly on images! Yes, you read that right – with the power of Java, we can now integrate function calling with image inputs.
+
+Imagine a system so advanced that it can:
+
+🚑 Call an ambulance immediately after detecting an image of a car accident.
+🍳 Suggest recipes the moment it sees images of vegetables.
+👮 Alert the police when it captures an image of a traffic signal violation.
+🚒 Contacts the fire department immediately if it "sees" fire.
+
+
+```
+public class ImageActionExample {
+public static void main(String[] args) throws AIProcessingException {
+GeminiImageActionProcessor processor = new GeminiImageActionProcessor();
+String imageDisription = processor.imageToText(args[0]);
+GeminiV2ActionProcessor actionProcessor = new GeminiV2ActionProcessor();
+Object obj = actionProcessor.processSingleAction(imageDisription);
+String str  = actionProcessor.summarize(imageDisription+obj.toString());
+System.out.println(str);
+}
+}
+```
+
+
 ## Autonomous Agent (Action Script)
 
 If you have a complete script written in English , ScriptProcessor will process the script and provide consolidated results
