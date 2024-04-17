@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyBooks Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #004466;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #006688;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .search-bar {
+            padding: 10px;
+            margin: 10px 20px;
+            background: #eee;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .search-bar input {
+            border: none;
+            background: none;
+            width: 80%;
+            padding: 8px;
+        }
+        .search-bar button {
+            padding: 8px 16px;
+            background: #006688;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnlyBooks Library Management System</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Browse Books</a>
+        <a href="#">Members</a>
+        <a href="#">Loans</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search books, members...">
+        <button>Search</button>
+    </div>
+    <div class="content">
+        <h2>Latest Books</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Available</th>
+            </tr>
+            <tr>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Fiction</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Dystopian</td>
+                <td>No</td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <h2>Member Management</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Membership Start</th>
+                <th>Books Loaned</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Alice Smith</td>
+                <td>2023-01-12</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Bob Johnson</td>
+                <td>2023-02-15</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockMoneyBank Online Banking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #005a9c;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #0073e6;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>MockMoneyBank</h1>
+</header>
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Transfer Funds</a>
+    <a href="#">Payments</a>
+    <a href="#">Statements</a>
+    <a href="#">Profile</a>
+</nav>
+<div class="content">
+    <h2>Account Details</h2>
+    <table>
+        <tr>
+            <th>Account Number</th>
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <th>Account Type</th>
+            <td>Checking</td>
+        </tr>
+        <tr>
+            <th>Balance</th>
+            <td>$5,000.00</td>
+        </tr>
+    </table>
+</div>
+<div class="content">
+    <h2>Recent Transactions</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>2024-04-01</td>
+            <td>Deposit</td>
+            <td>$1,000.00</td>
+        </tr>
+        <tr>
+            <td>2024-03-25</td>
+            <td>ATM Withdrawal</td>
+            <td>-$200.00</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

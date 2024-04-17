@@ -5,7 +5,8 @@ import com.t4a.annotations.Prompt;
 import com.t4a.api.JavaMethodAction;
 @Predict(actionName = "carRepairService", description = "This action will be called in case of car servicing", groupName = "car services")
 public class CarServiceAction implements JavaMethodAction {
-    public String carRepairService(String typeOfProblem) {
+    public String carRepairService(String typeOfProblem, String carColor) {
+        System.out.println("color of the car "+carColor);
         return typeOfProblem+" has been found and will be fixed";
     }
 }
