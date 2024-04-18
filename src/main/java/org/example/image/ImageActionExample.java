@@ -23,11 +23,14 @@ import java.net.URL;
 public class ImageActionExample {
     public static void main(String[] args) throws AIProcessingException {
         GeminiImageActionProcessor processor = new GeminiImageActionProcessor();
-        String imageDisription = processor.imageToText(args[0]);
+        String imageDisription = processor.imageToText(
+                GeminiImageExample.class.getClassLoader().getResource("images/bus.png")
+        );
         log.info(imageDisription);
         GeminiV2ActionProcessor actionProcessor = new GeminiV2ActionProcessor();
         Object obj = actionProcessor.processSingleAction(imageDisription);
         String str  = actionProcessor.summarize(imageDisription+obj.toString());
+        log.info(str);
 
     }
 

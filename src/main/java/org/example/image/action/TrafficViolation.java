@@ -9,6 +9,7 @@ import com.t4a.api.JavaMethodAction;
 public class TrafficViolation implements JavaMethodAction {
     public String trafficViolation(String typeOfViolation, String carColor) {
         System.out.println("car color "+carColor);
+        System.out.println("Type of Violation "+typeOfViolation);
         return typeOfViolation+" has been detected there will penalty";
     }
 }
