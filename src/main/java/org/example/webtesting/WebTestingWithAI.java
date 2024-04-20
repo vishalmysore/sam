@@ -2,6 +2,7 @@ package org.example.webtesting;
 
 import com.t4a.predict.PredictionLoader;
 import com.t4a.processor.AIProcessingException;
+import com.t4a.processor.selenium.SeleniumProcessor;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,23 +24,15 @@ public class WebTestingWithAI {
         WebDriver driver = new ChromeDriver(options);
 
 
-        SeleniumHelper helper = new SeleniumHelper(driver);
-        helper.act("go to website https://the-internet.herokuapp.com");
-        boolean buttonPresent =  helper.checkPage("do you see Add/Remove Elements, answer True or False");
+        SeleniumProcessor seleniumProcessor = new SeleniumProcessor(driver);
+        seleniumProcessor.processWebAction("go to website https://the-internet.herokuapp.com");
+        boolean buttonPresent =  seleniumProcessor.trueFalseQuery("do you see Add/Remove Elements?");
         if(buttonPresent) {
-            helper.act("click on Add/Remove Elements");
+            seleniumProcessor.processWebAction("click on Add/Remove Elements");
+        } else {
+            seleniumProcessor.processSingleAction("Create Jira ticket that add/remove elements is missing");
         }
 
-        // Find the link for Add/Remove Elements by its text and click it
-      //  WebElement linkToAddRemoveElements = driver.findElement(By.linkText("Add/Remove Elements"));
-       // linkToAddRemoveElements.click();
-       // TakesScreenshot ts = (TakesScreenshot) driver;
-       // byte[] screenshotBytes = ts.getScreenshotAs(OutputType.BYTES);
-       // GeminiImageActionProcessor imageActionProcessor = new GeminiImageActionProcessor();
-        // imageActionProcessor.imageToText()
-       // File srcFile = ts.getScreenshotAs(OutputType.FILE);
-      //  File destFile = new File("screenshot.png");
-       // FileHandler.copy(srcFile, destFile);
 
         // Perform further actions or validations as needed
 
