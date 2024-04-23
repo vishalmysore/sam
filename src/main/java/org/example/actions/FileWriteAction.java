@@ -1,4 +1,5 @@
 package org.example.actions;
+import com.t4a.annotations.Action;
 import com.t4a.annotations.Predict;
 import com.t4a.api.JavaMethodAction;
 
@@ -8,9 +9,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 @Log
-@Predict(actionName = "saveInformationToLocalFile",description = "saves the information in local file")
-public class FileWriteAction  implements JavaMethodAction {
+@Predict
+public class FileWriteAction  {
 
+    @Action(description = "saves the information in local file")
     public Object saveInformationToLocalFile(String args[]) {
         StringBuilder content = new StringBuilder();
         for (String arg : args) {

@@ -1,5 +1,6 @@
 package org.example.actions;
 
+import com.t4a.annotations.Action;
 import com.t4a.annotations.Predict;
 import com.t4a.api.AIAction;
 import com.t4a.api.ActionType;
@@ -16,8 +17,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 @Log
-@Predict(actionName = "getTemperature",description = "get weather for city")
-public class WeatherAction implements JavaMethodAction {
+@Predict
+public class WeatherAction  {
+    @Action(description = "get weather for city")
     public double getTemperature(String cityName) {
         double temperature = 0;
         String urlStr = "https://geocoding-api.open-meteo.com/v1/search?name="+cityName+"&count=1&language=en&format=json";

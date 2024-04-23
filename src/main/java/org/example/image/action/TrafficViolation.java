@@ -1,12 +1,14 @@
 package org.example.image.action;
 
+import com.t4a.annotations.Action;
 import com.t4a.annotations.Predict;
 import com.t4a.annotations.Prompt;
 import com.t4a.api.JavaMethodAction;
 
 
-@Predict(actionName = "trafficViolation", description = "This action will be called in case of traffic violation", groupName = "traffic violation")
-public class TrafficViolation implements JavaMethodAction {
+@Predict(groupDescription = "This group is for of traffic violation", groupName = "traffic violation")
+public class TrafficViolation  {
+    @Action(description = "This action will be called in case of traffic violation")
     public String trafficViolation(String typeOfViolation, String carColor) {
         System.out.println("car color "+carColor);
         System.out.println("Type of Violation "+typeOfViolation);

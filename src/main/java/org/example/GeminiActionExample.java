@@ -2,6 +2,7 @@ package org.example;
 
 import com.t4a.processor.AIProcessingException;
 import com.t4a.processor.GeminiActionProcessor;
+import com.t4a.processor.GeminiV2ActionProcessor;
 import lombok.extern.java.Log;
 import org.example.actions.GoogleSearchAction;
 
@@ -18,7 +19,7 @@ public class GeminiActionExample {
         String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
         String writePrmt = "my friends name is Vishal  , he lives in toronto , save this information to file";
-        GeminiActionProcessor processor = new GeminiActionProcessor();
+        GeminiV2ActionProcessor processor = new GeminiV2ActionProcessor();
         String result = (String)processor.processSingleAction(writePrmt);
         log.info(result);
         result = (String)processor.processSingleAction("find me info about indian food on internet",new GoogleSearchAction());

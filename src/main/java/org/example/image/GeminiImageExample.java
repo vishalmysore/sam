@@ -45,7 +45,7 @@ public class GeminiImageExample {
         log.info(pojo.toString());
 
         log.info(processor.imageToPojo(GeminiImageExample.class.getClassLoader().getResource("images/sales.PNG"), Sales.class).toString());
-       
+
 
 
 

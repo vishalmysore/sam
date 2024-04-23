@@ -1,5 +1,6 @@
 package org.example.actions;
 
+import com.t4a.annotations.Action;
 import com.t4a.annotations.Predict;
 import com.t4a.api.JavaMethodAction;
 
@@ -9,8 +10,10 @@ import kong.unirest.core.Unirest;
 import lombok.extern.java.Log;
 
 @Log
-@Predict(actionName = "googleSearch", description = "search the web for information")
-public class GoogleSearchAction implements JavaMethodAction {
+@Predict
+public class GoogleSearchAction  {
+
+    @Action(description = "search the web for information")
     public String googleSearch(String searchString, boolean isNews)  {
         //Just return random string if you do not have serper key
         //to get serper key look here https://serper.dev/

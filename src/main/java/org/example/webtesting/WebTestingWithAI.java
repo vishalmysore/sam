@@ -2,6 +2,7 @@ package org.example.webtesting;
 
 import com.t4a.predict.PredictionLoader;
 import com.t4a.processor.AIProcessingException;
+import com.t4a.processor.selenium.SeleniumGeminiProcessor;
 import com.t4a.processor.selenium.SeleniumProcessor;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
@@ -24,13 +25,13 @@ public class WebTestingWithAI {
         WebDriver driver = new ChromeDriver(options);
 
 
-        SeleniumProcessor seleniumProcessor = new SeleniumProcessor(driver);
+        SeleniumProcessor seleniumProcessor = new SeleniumGeminiProcessor(driver);
         seleniumProcessor.processWebAction("go to website https://the-internet.herokuapp.com");
         boolean buttonPresent =  seleniumProcessor.trueFalseQuery("do you see Add/Remove Elements?");
         if(buttonPresent) {
             seleniumProcessor.processWebAction("click on Add/Remove Elements");
         } else {
-            seleniumProcessor.processSingleAction("Create Jira ticket that add/remove elements is missing");
+            seleniumProcessor.processWebAction("Create Jira ticket that add/remove elements is missing");
         }
 
 
