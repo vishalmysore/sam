@@ -46,17 +46,17 @@ System.out.println(result);
 
 ```
 
-Create custom action by implementing ```JavaMethodAction ``` interface, the actionName specified in the predict annotation
-is the method you need to implement. Parameters of the method can be anything and any number of parameters are allowed
-You need to make sure parameters have meaningful name. 
+Create custom action by using @Predict annotation and @Action annotation. Parameters of the method can be 
+anything and any number of parameters are allowed You need to make sure parameters have meaningful name. 
 
 ```
-@Predict(actionName = "whatFoodDoesThisPersonLike", description = "what is the food preference of this person ")
-public class SimpleAction implements JavaMethodAction {
+@Predict
+public class SimpleAction {
 
+    @Action(description = "Provide persons name and then find out what does that person like")
     public String whatFoodDoesThisPersonLike(String name) {
         if("vishal".equalsIgnoreCase(name))
-            return "Paneer Butter Masala";
+        return "Paneer Butter Masala";
         else if ("vinod".equalsIgnoreCase(name)) {
             return "aloo kofta";
         }else
@@ -68,10 +68,10 @@ public class SimpleAction implements JavaMethodAction {
 or
 ```
 @Log
-@Predict(actionName = "googleSearch", description = "search the web for information")
-public class SearchAction implements JavaMethodAction {
+@Predict
+public class SearchAction  {
 
-
+    @Action(description = "Search the web for information")
     public String googleSearch(String searchString, boolean isNews)  {
         log.info(searchString+" : "+isNews);
         HttpResponse<String> response = Unirest.post("https://google.serper.dev/search")

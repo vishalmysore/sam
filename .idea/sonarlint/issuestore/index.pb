@@ -1,0 +1,19 @@
+
+o
+?src/main/java/org/example/image/GeminiCompareImagesExample.java,5\1\519c5a1525f772cca4800bbbc448045a680a2a92
+b
+2src/main/java/org/example/GeminiActionExample.java,f\1\f16ba24bf826186648bf17ccaa9445fccd4a60ea
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+b
+2src/main/java/org/example/OpenAIActionExample.java,4\f\4fb26f0a9bde33674d45bdfefe4fd4841cc58f94
+k
+;src/main/java/org/example/webtesting/SeleniumAIExample.java,8\5\8550ac3d1cc8a996cb20f02ca42478e3e9418897
+g
+7src/main/java/org/example/image/GeminiImageExample.java,3\b\3bfc91ec0cfc156305e470e5e6f896a975f3f01c
+g
+7src/main/java/org/example/image/ImageActionExample.java,5\e\5ed66db0f7682a21808fa30c22ae0b7b1c07ddac
+c
+3src/main/java/org/example/actions/SimpleAction.java,d\d\dda651b992c186c79b6d64f4d0b290c802ba0637
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

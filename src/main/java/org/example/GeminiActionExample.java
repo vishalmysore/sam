@@ -22,6 +22,8 @@ public class GeminiActionExample {
         GeminiV2ActionProcessor processor = new GeminiV2ActionProcessor();
         String result = (String)processor.processSingleAction(writePrmt);
         log.info(result);
+        result = (String)processor.processSingleAction(getABook);
+        log.info(result);
         result = (String)processor.processSingleAction("find me info about indian food on internet",new GoogleSearchAction());
         log.info(result);
 

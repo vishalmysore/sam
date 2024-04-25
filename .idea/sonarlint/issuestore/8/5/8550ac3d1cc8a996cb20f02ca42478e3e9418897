@@ -1,0 +1,18 @@
+
+‰
+java:S1854 "HRemove this useless assignment to local variable "imageActionProcessor".(Ç™•ÎşÿÿÿÿJ$35983fbe-bf67-4bad-8696-48b2356e5eb0
+„
+java:S1854"CRemove this useless assignment to local variable "screenshotBytes".(Ü•ŠÿÿÿÿÿJ$3da15ab7-febe-4753-8168-1b7e02a1f531
+¨
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿ØJ$80d129f8-261e-4d9c-ad40-6a2555c128a4
+u
+java:S1481"4Remove this unused "screenshotBytes" local variable.(Ü•ŠÿÿÿÿÿJ$9e89bc1f-c1fe-4cbd-a093-bf79ce8ae6ad
+z
+java:S1481 "9Remove this unused "imageActionProcessor" local variable.(Ç™•ÎşÿÿÿÿJ$9424b800-e880-4e37-a9ec-092193166b59
+|	java:S125""<This block of commented-out lines of code should be removed.(”ÁéìÿÿÿÿÿJ$1fe35d81-838b-4230-9cd6-78953d3295fe
+…
+java:S1128"DRemove this unused import 'com.t4a.processor.GeminiActionProcessor'.(·¸¯ğûÿÿÿÿJ$bc31478c-ffc5-4c22-a7e0-5400cb4f7235
+€
+java:S1128"?Remove this unused import 'org.openqa.selenium.io.FileHandler'.(ŸÓŠïüÿÿÿÿJ$1ea9d035-671d-4cf3-a701-956017ae40a1
+e
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥ÅJ$a8265c0a-f794-4142-a305-6bbe7a565bfb
