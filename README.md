@@ -18,6 +18,38 @@ applications. While retaining the core capabilities of autonomy and adaptability
 a controlled framework, executing tasks and making decisions that align with predefined business rules and 
 objectives 
 
+## Features and Articles
+- **Action Processor**: Execute actions based on prompt (OpenAI, Gemini, Anthropic) [here](https://www.linkedin.com/pulse/large-action-model-gemini-java-vishal-mysore-qki8c?trackingId=MuqKH2YZNwe74wisqhMSuw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Image Processor**: Trigger actions based on images [here](https://www.linkedin.com/pulse/image-recognition-function-calling-gemini-java-vishal-mysore-sz5zc?trackingId=lpJITsmYD0XPgdaG676jmA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Autonomous Agent**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/enterprise-ai-hub-llm-agent-built-openai-java-vishal-mysore-0p7oc?trackingId=qE91gQ%2Bngtn4vI45pxJEgg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Image to Text**: Convert images to text[here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Image to Pojo**: Convert images to Pojo [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Image to Json**: Convert images to Json [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Image to XML**: Convert images to XML[here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Selenium Actions**: Execute actions based on Selenium script [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc/?trackingId=r0XIS0PtQZWrCqbgZwLbww%3D%3D)
+- **Spring Integration**: Integrate with Spring Boot [here](https://www.linkedin.com/pulse/spring-action-integrating-ai-applications-vishal-mysore-ogjkc?trackingId=qsUWss8mwUVYSijqTD1SRA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Script Processor**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/action-all-you-need-moving-beyond-conversation-ai-vishal-mysore-sukfc?trackingId=XieWREfuTm3Lsb4uZkpAdw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Http Actions**: Execute actions based on HTTP requests [here](https://www.linkedin.com/pulse/http-endpoints-large-action-model-complete-ai-vishal-mysore-vhhmc?trackingId=Lht%2FqIlOATU5k3j8pznjKA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Prompt Processor**: Execute tasks based on prompts [here](https://www.linkedin.com/pulse/advanced-prompt-processing-java-parallel-data-more-vishal-mysore-7gtoc?trackingId=VNYgjVXcGDpkWkLNz0JPow%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Prompt Transformer**: Convert prompts into various formats ( Java , Json , XML) [here](https://www.linkedin.com/pulse/sam-simple-action-model-java-vishal-mysore-nmwec?trackingId=wFNZtf8A30JnMvWUjJhfiA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Custom GSON**: Convert special values in prompts [here](https://www.linkedin.com/pulse/large-action-model-gemini-java-vishal-mysore-qki8c?trackingId=MuqKH2YZNwe74wisqhMSuw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Subprompt Processing**: Break prompts into multiple subprompts [here](https://www.linkedin.com/pulse/building-autonomous-ai-agent-java-action-scripts-vishal-mysore-p3mbf?trackingId=Y6X67pUWoycIGQHaYexn9w%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Human In Loop Validation** [here](https://www.linkedin.com/pulse/ai-development-java-gemini-vishal-mysore-7puqc?trackingId=VUqUIPcf%2BLLOR5z1kOYWwA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Explainablity** [here](https://www.linkedin.com/pulse/enhancing-ai-decision-making-multi-ai-voting-mechanism-vishal-mysore-qlpxc?trackingId=NQ4m7eoWn97yJ50C7iBcMw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Kubernets Integration** [here]( [here](https://www.linkedin.com/pulse/kubernetes-management-ai-using-tools4ai-vishal-mysore-d4jxc?trackingId=sBUyZg%2BykR9dTx%2FTwineiQ%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Multi Command Processor** [here](https://www.linkedin.com/pulse/enterprise-ai-hub-llm-agent-built-openai-java-vishal-mysore-0p7oc?trackingId=074SlSqIoJkEJFEkOC98QA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B68UQVWs4SiW1kIcA14PsKg%3D%3D)
+- **Hallucination Detector** [here](https://www.linkedin.com/pulse/detect-ai-hallucinations-rag-routing-branching-chaining-vishal-mysore-jrzic)
+- **Bias Detector** [here](https://www.linkedin.com/pulse/ai-bias-what-does-mean-vishal-mysore-0atsc)
+- **Database Actions**
+- **Tibco Actions**
+- **Custom Actions**
+- **Custom HTTP Actions**
+- **Custom Shell Actions**
+- **Custom Swagger Actions**
+- **Custom OpenAI Actions**
+- **Custom Selenium Actions**
+- 
+
 ## Setup
 Clone this project and then  
 
