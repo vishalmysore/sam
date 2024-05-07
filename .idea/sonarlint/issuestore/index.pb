@@ -19,3 +19,13 @@ c
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 j
 :src/main/java/org/example/webtesting/WebTestingWithAI.java,b\f\bf0decad67bac1b843052cfef360c9e4e84eff6f
+\
+,src/main/java/org/example/ActionExample.java,0\5\0538bffb8a530cdc99b123f2b30a564074799bdf
+c
+3src/main/java/org/example/ComplexActionExample.java,f\6\f69cfa7dd9a909c8dc2a8a8c990efd084f6ad8d5
+j
+:src/main/java/org/example/agriculture/AgricultureDemo.java,8\8\889f5f7bb8a0a694499d1ec68f2b902db16d7fb6
+`
+0src/main/java/org/example/agriculture/Plant.java,b\0\b0083135d3ddb42aa4f38448375f917851f450a4
+d
+4src/main/java/org/example/actions/WeatherAction.java,7\8\7847a3d2943393b1b608c9222e0705b8d3203473
