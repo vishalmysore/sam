@@ -29,3 +29,5 @@ j
 0src/main/java/org/example/agriculture/Plant.java,b\0\b0083135d3ddb42aa4f38448375f917851f450a4
 d
 4src/main/java/org/example/actions/WeatherAction.java,7\8\7847a3d2943393b1b608c9222e0705b8d3203473
+Z
+*src/main/java/org/example/PojoExample.java,3\5\3552c9ae0d150537c0a6b4978e4052475f291be5

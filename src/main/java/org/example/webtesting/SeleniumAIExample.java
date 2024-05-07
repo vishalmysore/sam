@@ -1,6 +1,6 @@
 package org.example.webtesting;
 
-import com.t4a.processor.GeminiActionProcessor;
+
 import com.t4a.processor.GeminiImageActionProcessor;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;

@@ -1,18 +1,16 @@
 
 ‰
-java:S1854 "HRemove this useless assignment to local variable "imageActionProcessor".(Ç™•ÎşÿÿÿÿJ$ebd592d7-cc37-422e-b4ff-fabb4d8959a8
+java:S1854 "HRemove this useless assignment to local variable "imageActionProcessor".(Ç™•ÎşÿÿÿÿJ$bc8bbd5f-b088-4872-9135-48774583729b
 „
-java:S1854"CRemove this useless assignment to local variable "screenshotBytes".(Ü•ŠÿÿÿÿÿJ$31aaad7d-9702-4e4d-a97d-f5c7cb5a498c
+java:S1854"CRemove this useless assignment to local variable "screenshotBytes".(Ü•ŠÿÿÿÿÿJ$df2ae672-c94d-41ff-b673-caddca0566ea
 ¨
-java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿ØJ$9c2a2496-9b4a-4e40-9ab9-2d9c90c4da21
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿ØJ$378b500e-0514-4ebd-8fb8-bc5dc399ce91
 u
-java:S1481"4Remove this unused "screenshotBytes" local variable.(Ü•ŠÿÿÿÿÿJ$a4581d5c-7273-473a-b92c-69842808dce0
+java:S1481"4Remove this unused "screenshotBytes" local variable.(Ü•ŠÿÿÿÿÿJ$f3f2bced-3f91-469b-adfd-641060e34726
 z
-java:S1481 "9Remove this unused "imageActionProcessor" local variable.(Ç™•ÎşÿÿÿÿJ$dfb35114-cb27-4c33-bd2f-965b2b61dd0a
-|	java:S125""<This block of commented-out lines of code should be removed.(”ÁéìÿÿÿÿÿJ$86cdc033-e502-4a76-9feb-6f9086e0b7d5
-…
-java:S1128"DRemove this unused import 'com.t4a.processor.GeminiActionProcessor'.(·¸¯ğûÿÿÿÿJ$4ee87d70-ea70-42bb-9525-b5b82e2bc2ae
-€
-java:S1128"?Remove this unused import 'org.openqa.selenium.io.FileHandler'.(ŸÓŠïüÿÿÿÿJ$da21f4e9-914c-48f8-8d94-7eaff4409d73
-e
-java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥ÅJ$63feb033-a115-4c0f-9310-6e0bd53c840b
+java:S1481 "9Remove this unused "imageActionProcessor" local variable.(Ç™•ÎşÿÿÿÿJ$5ffe775a-a4cb-4be2-9715-6e60fd468d24
+|	java:S125""<This block of commented-out lines of code should be removed.(”ÁéìÿÿÿÿÿJ$3d80c47d-1d25-4e96-86fd-0cdd5107e7f4
+a
+java:S1128"?Remove this unused import 'org.openqa.selenium.io.FileHandler'.(ŸÓŠïüÿÿÿÿ8ÁìÁ©õ1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8ÁìÁ©õ1

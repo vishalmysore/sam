@@ -5,7 +5,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import com.t4a.processor.AIProcessingException;
-import com.t4a.transform.GeminiPromptTransformer;
+
+import com.t4a.transform.GeminiV2PromptTransformer;
 import com.t4a.transform.PromptTransformer;
 import lombok.extern.java.Log;
 import org.example.pojo.Player;
@@ -20,7 +21,7 @@ import java.util.Date;
 @Log
 public class PojoExample {
     public static void main(String[] args) throws AIProcessingException {
-        PromptTransformer builder = new GeminiPromptTransformer();
+        PromptTransformer builder = new GeminiV2PromptTransformer();
 
         String promptTxt ="Sachin Tendulkar is very good cricket player, " +
                            "he joined the sports on 24032022, he has played 300 matches " +
@@ -39,7 +40,7 @@ public class PojoExample {
         GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.registerTypeAdapter(Date.class, new DateDeserializer("dd MMMM yyyy"));
         Gson gson = gsonBuilder.create();
-        PromptTransformer customBuilder = new GeminiPromptTransformer(gson);
+        PromptTransformer customBuilder = new GeminiV2PromptTransformer(gson);
         String prompt = "Sachin Tendulkar is very good cricket player, he joined the sports on 12 May 2008," +
                          "he has played 300 matches and his max score is 400";
         player = (Player)customBuilder.transformIntoPojo(prompt, Player.class.getName(),"Player","create player pojo");

@@ -2,7 +2,8 @@ package org.example;
 
 import com.t4a.processor.AIProcessingException;
 
-import com.t4a.processor.GeminiActionProcessor;
+
+import com.t4a.processor.GeminiV2ActionProcessor;
 import lombok.extern.java.Log;
 import org.example.actions.AddRestaurantAction;
 
@@ -12,7 +13,7 @@ import org.example.actions.AddRestaurantAction;
 @Log
 public class ComplexActionExample {
     public static void main(String[] args) throws AIProcessingException {
-        GeminiActionProcessor processor = new GeminiActionProcessor();
+        GeminiV2ActionProcessor processor = new GeminiV2ActionProcessor();
         String promptTxt ="Sachin Tendulkar is very good cricket player, " +
                 "he joined the sports on 24032022, he has played 300 matches " +
                 "and his max score is 400. Can you send him a congratulations email";

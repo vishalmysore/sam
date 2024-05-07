@@ -1,7 +1,7 @@
 package org.example;
 
 import com.t4a.processor.AIProcessingException;
-import com.t4a.processor.GeminiActionProcessor;
+
 import com.t4a.processor.GeminiV2ActionProcessor;
 import lombok.extern.java.Log;
 import org.example.actions.GoogleSearchAction;
