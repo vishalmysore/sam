@@ -12,22 +12,22 @@
 # 🎬 Simple Action Model - SAM
 
 SAM is a reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
-Basically showcasing how straight forward it is to build action oriented applications in 100% Java. In addition to action model
-SAM can be used as an autonomous agent by utilizing action scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
+Basically showcasing how straight forward it is to build Agent AI applications in 100% Java. In addition to action model
+SAM can be used as an autonomous agent by utilizing Agentic AI scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
 applications. While retaining the core capabilities of autonomy and adaptability, scripts can operates within
 a controlled framework, executing tasks and making decisions that align with predefined business rules and 
 objectives 
 
 ## Features and Articles
-- **Action Processor**: Execute actions based on prompt (OpenAI, Gemini, Anthropic) [here](https://www.linkedin.com/pulse/large-action-model-gemini-java-vishal-mysore-qki8c?trackingId=MuqKH2YZNwe74wisqhMSuw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **AI Agent Processor**: Execute actions based on prompt (OpenAI, Gemini, Anthropic) [here](https://www.linkedin.com/pulse/large-action-model-gemini-java-vishal-mysore-qki8c?trackingId=MuqKH2YZNwe74wisqhMSuw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image Processor**: Trigger actions based on images [here](https://www.linkedin.com/pulse/image-recognition-function-calling-gemini-java-vishal-mysore-sz5zc?trackingId=lpJITsmYD0XPgdaG676jmA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
-- **Autonomous Agent**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/enterprise-ai-hub-llm-agent-built-openai-java-vishal-mysore-0p7oc?trackingId=qE91gQ%2Bngtn4vI45pxJEgg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Autonomous AI Agent**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/enterprise-ai-hub-llm-agent-built-openai-java-vishal-mysore-0p7oc?trackingId=qE91gQ%2Bngtn4vI45pxJEgg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image to Text**: Convert images to text[here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image to Pojo**: Convert images to Pojo [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image to Json**: Convert images to Json [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image to XML**: Convert images to XML[here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc?trackingId=8N9y2fCuYRDzmju9dREwVw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
-- **Selenium Actions**: Execute actions based on Selenium script [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc/?trackingId=r0XIS0PtQZWrCqbgZwLbww%3D%3D)
-- **Spring Integration**: Integrate with Spring Boot [here](https://www.linkedin.com/pulse/spring-action-integrating-ai-applications-vishal-mysore-ogjkc?trackingId=qsUWss8mwUVYSijqTD1SRA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
+- **Selenium AI Agent**: Execute actions based on Selenium script [here](https://www.linkedin.com/pulse/selenium-ai-automation-image-processing-gemini-vishal-mysore-fihwc/?trackingId=r0XIS0PtQZWrCqbgZwLbww%3D%3D)
+- **Spring AI Agent Integration**: Integrate with Spring Boot [here](https://www.linkedin.com/pulse/spring-action-integrating-ai-applications-vishal-mysore-ogjkc?trackingId=qsUWss8mwUVYSijqTD1SRA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Script Processor**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/action-all-you-need-moving-beyond-conversation-ai-vishal-mysore-sukfc?trackingId=XieWREfuTm3Lsb4uZkpAdw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Http Actions**: Execute actions based on HTTP requests [here](https://www.linkedin.com/pulse/http-endpoints-large-action-model-complete-ai-vishal-mysore-vhhmc?trackingId=Lht%2FqIlOATU5k3j8pznjKA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Prompt Processor**: Execute tasks based on prompts [here](https://www.linkedin.com/pulse/advanced-prompt-processing-java-parallel-data-more-vishal-mysore-7gtoc?trackingId=VNYgjVXcGDpkWkLNz0JPow%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
@@ -56,7 +56,7 @@ Clone this project and then
 ```mvn clean install```
 
 ## Action Processor
-Action Processors are responsible for taking actions based on prompt. Actions can be written in Java Methods, Or could be 
+AI Agent Action Processors are responsible for taking actions based on prompt. Actions can be written in Java Methods, Or could be 
 HTTP rest end points , could be Shell scripts or could be loaded directly from the Swagger HTTP configurations.
 Inside ```Main.java``` these 2 lines will predict the action and execute it using Gemini , you dont have to worry
 about specifying the action, the action will be picked up based on Natural Language Processing semantic mapping

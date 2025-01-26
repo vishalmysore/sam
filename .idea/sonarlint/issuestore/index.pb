@@ -31,3 +31,7 @@ d
 4src/main/java/org/example/actions/WeatherAction.java,7\8\7847a3d2943393b1b608c9222e0705b8d3203473
 Z
 *src/main/java/org/example/PojoExample.java,3\5\3552c9ae0d150537c0a6b4978e4052475f291be5
+d
+4src/main/java/org/example/SeleniumScriptExample.java,e\4\e42b7611139c1a2d186d581edd895c26e29a0ae2
+e
+5src/main/java/org/example/TranslationPojoExample.java,a\e\ae43f339eaea3ae5f3edd7dfb002a3869b701306
