@@ -21,8 +21,14 @@
         </dependency>
         <dependency>
             <groupId>io.github.vishalmysore</groupId>
+            <artifactId>a2ajava</artifactId>
+            <version>0.0.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.vishalmysore</groupId>
             <artifactId>tools4ai</artifactId>
-            <version>1.0.4</version>
+            <version>1.0.7.5</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -74,7 +80,7 @@
             </executions>
             <configuration>
                 <!-- Specify the main class of your Java program -->
-                <mainClass>org.example.GeminiActionExample</mainClass>
+                <mainClass>io.github.vishalmysore.example.noprotocol.GeminiActionExample</mainClass>
                 <!-- Pass arguments to your Java program -->
             </configuration>
         </plugin>
@@ -87,7 +93,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-                        <mainClass>org.example.GeminiActionExample</mainClass>
+                        <mainClass>io.github.vishalmysore.example.noprotocol.GeminiActionExample</mainClass>
                     </manifest>
                 </archive>
             </configuration>

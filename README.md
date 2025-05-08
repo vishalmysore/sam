@@ -1,24 +1,56 @@
-<div align="center">
-  <a href="https://www.linkedin.com/posts/vishalrow_ai-appdevelopment-actions-activity-7171302152101900288-64qg?utm_source=share&utm_medium=member_desktop">
-    <img src="tools4ai.png"  width="300" height="300">
-  </a>
-</div>
-<p align="center">
-    <img  src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fvishalmysore%2Ftools4ai&countColor=black&style=flat%22">
-    <a target="_blank" href="https://github.com/vishalmyore/tools4ai"><img src="https://img.shields.io/github/stars/vishalmysore/tools4ai?color=black" /></a>
-    <a target="_blank" href="https://github.com/vishalmysore/sam/actions/workflows/maven.yml"><img src="https://github.com/vishalmysore/sam/actions/workflows/maven.yml/badge.svg" /></a>  
-</p>
+# 🎬 Google A2A Protocol - Java Examples
 
-# 🎬 Simple Action Model - SAM
+If you're looking to build Java applications using the Google A2A (Agent-to-Agent) protocol, this repository provides numerous reference examples to help you get started.
+To get started you can look at A2AJavaAgent class, which shows how to define and trigger Google a2a tasks using natural language prompts.
 
-SAM is a reference implementation of Tool4AI project  https://github.com/vishalmysore/Tools4AI
-Basically showcasing how straight forward it is to build Agent AI applications in 100% Java. In addition to action model
-SAM can be used as an autonomous agent by utilizing Agentic AI scripts which are a specialized form of these intelligent systems, designed specifically for enterprise AI 
-applications. While retaining the core capabilities of autonomy and adaptability, scripts can operates within
-a controlled framework, executing tasks and making decisions that align with predefined business rules and 
-objectives 
+This framework supports:
 
-## Features and Articles
+Complex Java types: Automatically convert between structured prompts and custom POJOs, including nested objects and lists.
+
+Spring Boot integration: Seamlessly plug into your existing Spring application context.
+
+Minimal setup: Use simple annotations like @Agent, and @Action to expose your service classes and methods as A2A-compatible agents.
+
+```
+A2AJavaAgent 
+```
+
+if you run it with this prompt 
+
+```
+String prompt
+                = "hey I am in Toronto do you think i can go out without jacket";
+
+        // Get the client from Spring context
+        LocalA2ATaskClient client = context.getBean(LocalA2ATaskClient.class);
+
+        // Send task and log response
+        Task t = client.sendTask(prompt);
+
+        log.info(client.getTask(t.getId(),2).toString());
+```
+
+you will see in the result that ``` WeatherAction``` is triggerd
+
+similarly
+
+```
+  prompt ="Sachin Tendulkar is very good cricket player, " +
+                "he joined the sports on 24032022, he has played 300 matches " +
+                "and his max score is 400. Can you send him a congratulations email 
+```
+
+will trigger 
+
+```
+@Agent(groupName = "player", groupDescription = "Player and sports related action")
+public class NotifyPlayerAction  {
+```
+
+ 
+To know more about how to build agentic java applications please continue reading the below articles .  
+
+# Features and Articles on Agentic Java applications 
 - **AI Agent Processor**: Execute actions based on prompt (OpenAI, Gemini, Anthropic) [here](https://www.linkedin.com/pulse/large-action-model-gemini-java-vishal-mysore-qki8c?trackingId=MuqKH2YZNwe74wisqhMSuw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Image Processor**: Trigger actions based on images [here](https://www.linkedin.com/pulse/image-recognition-function-calling-gemini-java-vishal-mysore-sz5zc?trackingId=lpJITsmYD0XPgdaG676jmA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
 - **Autonomous AI Agent**: Execute tasks based on scripts [here](https://www.linkedin.com/pulse/enterprise-ai-hub-llm-agent-built-openai-java-vishal-mysore-0p7oc?trackingId=qE91gQ%2Bngtn4vI45pxJEgg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3Basc8boqLRvqWpXTf9SUEpA%3D%3D)
@@ -65,7 +97,7 @@ and will be executed.
 ```
 String cookPromptSingleText = "My friends name is Vishal ," +
                 "I dont know what to cook for him today.";
-GeminiActionProcessor processor = new GeminiActionProcessor();
+GeminiV2ActionProcessor processor = new GeminiV2ActionProcessor();
 String result = (String)processor.processSingleAction(cookPromptSingleText);
 log.info(result);
 ```
@@ -83,7 +115,7 @@ Create custom action by using @Predict annotation and @Action annotation. Parame
 anything and any number of parameters are allowed You need to make sure parameters have meaningful name. 
 
 ```
-@Predict
+@Agent
 public class SimpleAction {
 
     @Action(description = "Provide persons name and then find out what does that person like")
@@ -101,7 +133,7 @@ public class SimpleAction {
 or
 ```
 @Log
-@Predict
+@Agent
 public class SearchAction  {
 
     @Action(description = "Search the web for information")
