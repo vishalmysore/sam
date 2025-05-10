@@ -154,7 +154,7 @@ Task bookingTask = client.sendTask(bookingPrompt);
    - Include integration tests for A2A flows
    - Test with various natural language inputs
 
-## Conclusion
+## Why this matter?
 
 The Google A2A protocol provides a powerful way to add AI capabilities to existing Java applications. By following this guide, you can:
 
@@ -172,7 +172,7 @@ The examples demonstrated here are just the beginning. The protocol's flexibilit
 - Integrate with additional APIs and services
 - Contribute to the A2A community
 
-For more information and updates, visit the [official documentation](https://github.com/google/a2a) and join the community discussions.
+For more information and updates, visit the a2ajava [official documentation](https://github.com/vishalmysore/a2ajava) and join the community discussions.
 
 
 
