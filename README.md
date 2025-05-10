@@ -1,7 +1,8 @@
 # 🎬 Google A2A Protocol - Java Examples
 
 If you're looking to build Java applications using the Google A2A (Agent-to-Agent) protocol, this repository provides numerous reference examples to help you get started.
-To get started you can look at [A2AJavaAgent](/src/main/java/io/github/vishalmysore/example/a2a/A2AJavaAgent.java) class, which shows how to define and trigger Google a2a tasks using natural language prompts.
+To get started you can look at [A2AJavaAgent](/src/main/java/io/github/vishalmysore/example/a2a/A2AJavaAgent.java) class, which shows how to define and trigger Google a2a tasks using natural language prompts.  
+A2AJava is the Java implementation of the Google A2A protocol you can check the project [here](https://github.com/vishalmysore/a2ajav) .
 
 This framework supports:
 
